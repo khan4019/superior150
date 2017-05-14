@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+// variables
+$base-font-family: 'Open Sans';
+
+
+// common style
+body {
+  margin: 0;
+  font-family: $base-font-family;
+}

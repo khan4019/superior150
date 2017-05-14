@@ -1,0 +1,34 @@
+<md-toolbar color="primary">
+	<button md-icon-button [md-menu-trigger-for]="menu">
+    <md-icon>menu</md-icon>		
+  </button>
+	<md-menu #menu="mdMenu" class="mbe-dropdown">
+    <a md-menu-item routerLink="/home">
+      <md-icon color="primary">home</md-icon>
+      Home
+    </a>
+    <a color="primary" md-menu-item routerLink="/pictures">
+    <md-icon>photo_camera</md-icon>
+    Photos</a>
+    <a  md-menu-item routerLink="/videos">
+    <md-icon>videocam</md-icon>
+    Videos</a>
+    <a  md-menu-item routerLink="/floor">
+    <md-icon>view_comfy</md-icon>
+    Floor Plan</a>
+		<a  md-menu-item routerLink="/realtor">
+    <md-icon>location_city</md-icon>
+    Realtor</a>
+    <a  md-menu-item routerLink="/contact">
+    <md-icon>contact_phone</md-icon>
+    Contact Us</a>       
+   
+	</md-menu>
+	<span class="app-title">150 Superior</span>
+	<span class="fill-middle-space"></span>
+	<span>
+		<button md-icon-button>
+			<md-icon svgIcon="power_settings_new"></md-icon>
+    </button>
+	</span>
+</md-toolbar>
