@@ -1,0 +1,11 @@
+.app-content{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+}
+
+@media all and (min-width: 1200px) {
+    .app-content {
+        width: 1200px;
+    }
+}

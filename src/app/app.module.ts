@@ -4,20 +4,25 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+import {FlexLayoutModule} from '@angular/flex-layout';
+
 import 'hammerjs';
-import {MdButtonModule, MdCheckboxModule, MdIconModule, MdMenuModule, MdToolbarModule} from '@angular/material';
+import {MdButtonModule, MdCheckboxModule, MdIconModule, MdMenuModule, MdToolbarModule, MdCardModule, MdInputModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SwiperModule } from 'angular2-useful-swiper'; 
+
 
 import { AppRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { PicturesComponent } from './pictures/pictures.component';
+import { PhotosComponent } from './photos/photos.component';
 import { VideosComponent } from './videos/videos.component';
 import { FloorPlanComponent } from './floor-plan/floor-plan.component';
 import { RealtorComponent } from './realtor/realtor.component';
 import { ContactComponent } from './contact/contact.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +30,7 @@ import { ContactComponent } from './contact/contact.component';
     NavComponent,
     FooterComponent,
     HomeComponent,
-    PicturesComponent,
+    PhotosComponent,
     VideosComponent,
     FloorPlanComponent,
     RealtorComponent,
@@ -36,12 +41,13 @@ import { ContactComponent } from './contact/contact.component';
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-     RouterModule.forRoot(AppRoutes),
+    RouterModule.forRoot(AppRoutes),
+    FlexLayoutModule,
     MdButtonModule,
-    MdCheckboxModule,
     MdIconModule,
     MdMenuModule,
-    MdToolbarModule
+    MdToolbarModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
