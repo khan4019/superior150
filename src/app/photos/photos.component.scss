@@ -1,4 +1,10 @@
 swiper{
-    height: 600px;
     width: 100%;
+    text-align: center;
+}
+
+.swiper-wrapper {
+    img {
+        max-width: 100%;
+    }
 }
