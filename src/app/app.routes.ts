@@ -1,3 +1,4 @@
+import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
 import { PhotosComponent } from './photos/photos.component';
 import {VideosComponent} from './videos/videos.component';
@@ -8,7 +9,7 @@ import {ContactComponent} from './contact/contact.component';
 export const AppRoutes = [
    {
     path: '',
-    component: HomeComponent
+    component: MainComponent
   },
   {
     path: 'home',

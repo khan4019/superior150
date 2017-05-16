@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 import 'hammerjs';
-import {MdButtonModule, MdCheckboxModule, MdIconModule, MdMenuModule, MdToolbarModule, MdCardModule, MdInputModule} from '@angular/material';
+import {MdButtonModule, MdCheckboxModule, MdIconModule, MdMenuModule, MdToolbarModule, MdCardModule, MdInputModule, MdTabsModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { SwiperModule } from 'angular2-useful-swiper'; 
 
@@ -22,6 +22,7 @@ import { VideosComponent } from './videos/videos.component';
 import { FloorPlanComponent } from './floor-plan/floor-plan.component';
 import { RealtorComponent } from './realtor/realtor.component';
 import { ContactComponent } from './contact/contact.component';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ContactComponent } from './contact/contact.component';
     VideosComponent,
     FloorPlanComponent,
     RealtorComponent,
-    ContactComponent
+    ContactComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +49,7 @@ import { ContactComponent } from './contact/contact.component';
     MdIconModule,
     MdMenuModule,
     MdToolbarModule,
+    MdTabsModule,
     SwiperModule
   ],
   providers: [],
